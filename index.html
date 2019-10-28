@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="bg-danger">
+    <h1 class="text-center text-light">Turn-based Board Game</h1>
+    <div class="container-fluid">
+        <div class="container-fluid ">
+            <div class="row">
+                <!-- board div-->
+                <div class="big-container col-8 " id="game"></div>
+                <!-- PLAYER ONE CARD -->
+                <div class="col-2 p-2 pl-4">
+                    <div class="card" id="player1" style="width:15rem;">
+                        <img class=" card-img-top rounded mx-auto d-block" style="width: 4rem" src="imgs/ninjaShow2.svg" alt="PLAYER 1">
+                        <div class="card-body p-2 ">
+                            <h5 class="card-title  text-center">Player 1</h5>
+                            <p class="card-text text-center">Black Ninja </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Player Health : <span class="player-health"></span></li>
+                                <li class="list-group-item">Current Weapon Name : <span class="weapon-name"></span></li>
+                                <li class="list-group-item">Movement Points Left : <span class="move-left"></span></li>
+                                <li class="list-group-item">Weapon Damage : <span class="weapon-dmg"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PLAYER TWO CARD-->
+                <div class="col-2 p-2 pl-4">
+                    <div class="card" id="player2" style="width:15rem;">
+                        <img class=" card-img-top rounded mx-auto d-block " style="width: 4rem" src="imgs/ninjaShow1.svg" alt="PLAYER 1">
+                        <div class="card-body p-2">
+                            <h5 class="card-title  text-center">Player 2</h5>
+                            <p class="card-text text-center" style="color :#DC3545;">Red Ninja </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Player Health : <span class="player-health"></span></li>
+                                <li class="list-group-item">Current Weapon Name : <span class="weapon-name"></span></li>
+                                <li class="list-group-item">Movement Points Left : <span class="move-left"></span></li>
+                                <li class="list-group-item">Weapon Damage : <span class="weapon-dmg"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Display div-->
+        <div class="display " id="display">
+            <p>-Welcome On board... <br> -Every player have 3 Moves <br>-The <span class="text-primary">BLUE</span> background mean the current player <br> -Let's get started ...</p>
+        </div>
+        <!--Buttons div-->
+        <div class="container- btn-div col-6 ">
+            <button type="button " id="attack" class="btn btn-danger btn-lg ">Attack</button>
+            <button type="button" id="defend" class="btn btn-warning btn-lg">Defend</button>
+            <button type="button" id="new-game" class="btn btn-primary btn-lg">New Game</button>
+        </div>
+    </div>
+    <!--Scripts section-->
+    <script src="board.js"></script>
+    <script src="classes.js"></script>
+    <script src="utility.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

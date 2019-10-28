@@ -1,0 +1,92 @@
+html {
+	max-height: 570px;
+}
+
+body {
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(252, 176, 69, 1) 100%
+	);
+}
+
+.row {
+	display: flex;
+	flex: auto;
+}
+
+.cell {
+	width: 100%;
+	border: 1px solid #164b1d;
+}
+
+.big-container {
+	display: flex;
+	flex-direction: column;
+	height: 648px;
+	margin: 2px auto;
+	top: 4px;
+}
+
+.tree {
+	background: url(imgs/tree.png) center no-repeat rgb(32, 184, 39);
+	background-size: contain;
+}
+
+.grass {
+	background-color: rgb(32, 184, 39);
+}
+
+.weapon1 {
+	background: url(imgs/weapon1.png) center no-repeat rgb(32, 184, 39);
+	background-size: contain;
+}
+
+.weapon2 {
+	background: url(imgs/weapon2.png) center no-repeat rgb(32, 184, 39);
+	background-size: contain;
+}
+
+.weapon3 {
+	background: url(imgs/weapon3.png) center no-repeat rgb(32, 184, 39);
+	background-size: contain;
+}
+
+.weapon4 {
+	background: url(imgs/weapon4.png) center no-repeat rgb(32, 184, 39);
+	background-size: contain;
+}
+
+.btn-div {
+	margin: 10px 24%;
+}
+
+.display {
+	position: relative;
+	left: -45px;
+	background-color: rgb(227, 240, 227);
+	color: black;
+	width: 29.5vw;
+	height: 253px;
+	float: right;
+	top: -200px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -50px;
+	box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.938);
+}
+
+.player1 {
+	background: url(imgs/player1.png) center no-repeat rgb(32, 184, 39);
+	background-size: contain;
+}
+
+.player2 {
+	background: url(imgs/player2.png) center no-repeat rgb(32, 184, 39);
+	background-size: contain;
+}
+
+.bordwer {
+	border: 1px solid rgba(255, 246, 248, 0.89);
+}
