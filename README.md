@@ -1,65 +1,51 @@
 <h1 align="center"> Online Ninja World Game </h1>
 
 > an online game written JavaScript in which 2 players play each turn to compete.
-> On the map, a limited number of weapons (up to 4) will be placed randomly and can be collected by players who pass through.
+
+## Preview
+
+- [ Ninja World](https://mizou9999.github.io/NinjaWorld/)
 
 ## User Stories
 
-- [x] As a user I can see a randomly generated password on page load
-- [ ] As a user I can change the length of the generated password
-- [x] As a user I can include/exclude uppercase letters, lowercase letters, numbers, and symbols
-- [x] As a user I can see a new password whenever I make a change in my settings
-- [x] As a user I can click on a button to copy the password to clipboard without selecting it first
+### Generate the map
 
-## Challenges
+- [x] Generate randomly the game map.
+- [x] Each box can either Empty or Unaviable.
+- [x] On the map, a limited number of weapons (up to 4) will be placed randomly and can be collected by players who pass through.
+- [x] Each weapon has a different damage inflicted.
+- [x] The default weapon which team players must inflict 10 points of damage.
+- [x] Each weapon has a name and associated visual.
+- [x] The placement of the two players is also randomly on the map when the game loads.
+- [x] They should not touch (they can not be together).
 
-- [ ] As a user I can come back to the page at any time and generate new passwords with my previously used settings
-- [ ] As a user I can see the strength of the generated password on a strength meter
+### Movements
 
-## Tools Used
+- [x] For each turn, a player can move from one to three boxes (horizontally or vertically).
+- [x] If a player passes over a box containing a weapon, they leave their current weapon on site and replace it with the new one.
+- [x] If a player cross over another player a battle begins.
 
-- [React.js](https://reactjs.org/) library
-- [Cypress](https://www.cypress.io/) end to end testing framework
-- [Jest](https://jestjs.io/) testing framework
-- [Enzyme](https://airbnb.io/enzyme/) JavaScript testing utility
-- [ESLint](http://eslint.org/) linter
+### Fight
 
-The project uses [CircleCI](https://circleci.com) to run the e2e and unit tests every time a new commit is pushed to GitHub. CircleCI also builds the app and deploys it to [Netlify](https://netlify.com) after successful tests, so the latest updates are always available [here][preview].
+- [x] Each player attacks in turn.
+- [x] The damage depends on the player's weapon.
+- [x] The player can choose to attack or defend against the next shot.
+- [x] If the player chooses to defend themselves, they sustain 50% less damage than normal.
+- [x] As soon as the life points of a player (initially 100) falls to 0, they lose. A message appears and the game is over.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objectives
 
-## Install and Build
+> Design reusable JavaScript application architecture.
+> Develop an object-oriented JavaScript application.
 
-In the project directory, you can run:
+## Language
 
-### `npm start`
-
-Runs the app in the development mode. You can open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits. You will also see any lint errors in the console.
-
-### `npm run lint`
-
-Launches the test runner in the interactive watch mode.
-
-### `npm run test:unit`
-
-Launches the test runner in the interactive watch mode.
-
-### `npm run test:e2e`
-
-Starts a development server and runs Cypress tests.
-
-### `npm test`
-
-Runs unit tests, starts a development server, and runs e2e tests.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+- Vanilla JavaScript
+- Html/css
+- Bootstrap
 
 The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
 ## Contributors
 
-- [Zsolt Meszaros](https://github.com/zsoltime)
+- [Aimen Aounallah](https://github.com/Mizou9999)
