@@ -2,6 +2,8 @@
 
 > an online game written JavaScript in which 2 players play each turn to compete.
 
+> онлайн игра на JavaScript, в которой 2 игрока играют в каждый ход, чтобы соревноваться.
+
 ## Preview
 
 - [ Ninja World](https://mizou9999.github.io/NinjaWorld/)
@@ -36,15 +38,25 @@
 ## Objectives
 
 > Design reusable JavaScript application architecture.
+
 > Develop an object-oriented JavaScript application.
+
+### Генерировать карту
+
+- [x] Генерация случайным образом карты игры.
+- [x] Каждая коробка может быть пустой или невидимой.
+- [x] Ограниченное количество оружия (до 4 штук) будет размещено на карте случайным образом и может быть собрано игроками, проходящими мимо.
+- [x] Каждому оружию нанесен различный ущерб.
+- [x] Оружие по умолчанию, которое игроки команды должны нанести 10 очков урона.
+- [x] Каждое оружие имеет имя и связанное с ним изображение.
+- [x] Расположение двух игроков также случайно отображается на карте при загрузке игры.
+- [x] Они не должны прикасаться друг к другу (они не могут быть вместе).
 
 ## Language
 
 - Vanilla JavaScript
 - Html/css
 - Bootstrap
-
-The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
 ## Contributors
 
